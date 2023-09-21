@@ -1,9 +1,9 @@
 <template>
   
     <div class="heroes">
-      <div v-for="character in characters" :key="character.id">
+      <div class="hero" v-for="character in characters" :key="character.id">
         <h2>{{ character.name }}</h2>
-        <img :src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" width="400" height="400">
+        <img class="imagen" :src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" >
       </div>
     </div>
   </template>
