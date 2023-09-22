@@ -3,6 +3,7 @@
   --color-text: black;
 }
 body{
+  background: radial-gradient(circle, rgba(234,37,29,1) 0%, rgba(59,19,17,1) 100%);
   border: none;
   padding: 0px;
   margin: 0;
@@ -16,8 +17,8 @@ body{
   padding: 20px;
   border: 1px solid black;
   width: 600px;
-
 }
+
 .peque{
   width: 25%;
   position: absolute;
@@ -25,15 +26,18 @@ body{
   top: 50px;
   
 }
+
 .titulosuper{
   text-align: center;
   max-width: 70%;
 }
+
 .texto{
   max-width: 70%;
 }
 
 .close-button {
+  text-align: center;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -89,7 +93,8 @@ body{
   text-align: center;
   transition: transform 0.3s;
   transform: scale(1);
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
 }
 .hero:hover{
   transform: scale(1.1);
