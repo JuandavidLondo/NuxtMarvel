@@ -1,7 +1,7 @@
 <template>
    <div class="layout">
     <nav class="navigation">
-        <img class="imagenlay" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2023/02/logo-marvel-comics-2968634.jpg?tf=3840x" alt="">
+        <img class="imagenlay" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Marvel-Comics-Logo.svg/1200px-Marvel-Comics-Logo.svg.png" alt="">
     </nav>
     <main class="content">
         <slot/>
