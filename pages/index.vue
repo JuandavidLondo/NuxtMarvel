@@ -4,9 +4,9 @@
       <h2 class="characterName">{{ character.name }}</h2>
       <img class="imagen" :src="character.thumbnail.path + '.' + character.thumbnail.extension" alt="" >
     </div>
-    <div v-if="selectedCharacter" class="desactivar-fondo">
+    <div v-if="selectedCharacter" class="desactivar-fondo" id="desactivar-fondo" @click="closeDialog($event)">
     <div v-if="selectedCharacter" class="modal">
-      <button @click="closeDialog" class="close-button">X</button>
+      <button @click="closeDialog($event)" class="close-button" id="close-button">X</button>
       <h2 class="titulosuper">{{ selectedCharacter.name }}</h2>
       <img class="peque" :src="selectedCharacter.thumbnail.path + '.' + selectedCharacter.thumbnail.extension" alt="">
       <p class="texto">{{ selectedCharacter.description }}</p>
@@ -48,8 +48,10 @@ import { ref } from 'vue';
   console.log("sapo")
 }
 
-const closeDialog = () => {
+const closeDialog = (event) => {
+if (event.target.id === "close-button" || event.target.id === "desactivar-fondo") {
   selectedCharacter.value = null;
+}
 }
   loadCharacter();
 </script>
